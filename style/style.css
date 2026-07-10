@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* --- global css --- */
-
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +27,6 @@ a {
 }
 
 /* --- Header / Navbar --- */
-
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #f3f4f6;
@@ -78,7 +76,6 @@ a {
 }
 
 /* --- banner / hero section --- */
-
 .banner {
   background-image:
     linear-gradient(rgba(9, 9, 11, 0.85), rgba(9, 9, 11, 0.85)),
@@ -119,7 +116,6 @@ a {
 }
 
 /* --- Speaker section --- */
-
 .section-title {
   text-align: center;
   font-size: 36px;
@@ -305,4 +301,132 @@ a {
   padding: 12px;
   border-radius: 12px;
   margin-top: 32px;
+}
+
+/* --- Newsletter Section --- */
+.newsletter-section {
+  background-color: #eff6ff;
+  padding: 96px 24px;
+  text-align: center;
+  position: relative;
+}
+.newsletter-badge {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4b5563;
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.newsletter-badge::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #2563eb;
+  border-radius: 50%;
+}
+.newsletter-section h2 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+  color: #111827;
+}
+.newsletter-section h2 span {
+  color: #2563eb;
+}
+.newsletter-section p {
+  font-size: 16px;
+  color: #4b5563;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+.form-box {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 16px;
+  display: flex;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+.form-box input {
+  flex: 1;
+  border: none;
+  padding: 0 16px;
+  font-size: 16px;
+  outline: none;
+  color: #374151;
+}
+.form-box input::placeholder {
+  color: #9ca3af;
+}
+.form-box button {
+  white-space: nowrap;
+}
+
+/* --- Footer Css Start --- */
+.footer {
+  background-color: #09090b;
+  color: #a1a1aa;
+  padding: 64px 0 32px 0;
+  border-top: 1px solid #18181b;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.footer .logo {
+  color: #ffffff;
+}
+.footer .logo-icon {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #18181b;
+  border-radius: 50%;
+  transition:
+    background-color 0.2s,
+    fill 0.2s;
+}
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  fill: #a1a1aa; /* আইকনের ডিফল্ট কালার */
+  transition: fill 0.2s;
+}
+.social-links a:hover {
+  background-color: #2563eb;
+}
+.social-links a:hover svg {
+  fill: #ffffff; /* হোভার করলে আইকন সাদা হবে */
+}
+.footer-divider {
+  border: 0;
+  height: 1px;
+  background-color: #18181b;
+  margin: 32px 0;
+}
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #71717a;
 }
