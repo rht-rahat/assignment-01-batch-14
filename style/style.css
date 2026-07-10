@@ -3,7 +3,7 @@
 /* --- global css --- */
 
 * {
-  margin: o;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -19,7 +19,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 /* --- Layout  Container --- */
 .container {
@@ -60,7 +59,7 @@ a {
 
 .nav-links a:hover {
   color: #2563eb;
-} 
+}
 
 .btn-primary {
   background-color: #2563eb;
@@ -78,3 +77,43 @@ a {
   background-color: #1d4ed8;
 }
 
+/* --- banner / hero section --- */
+
+.banner {
+  background-image:
+    linear-gradient(rgba(9, 9, 11, 0.85), rgba(9, 9, 11, 0.85)),
+    url(../assets/banner2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 180px 0px;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.banner p {
+  font-size: 18px;
+  color: #ffffffc5;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
+}
+
+.btn-large {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+}
